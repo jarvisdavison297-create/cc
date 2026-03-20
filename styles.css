@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #121212;
+  color: #fff;
+  line-height: 1.6;
+  transition: background-color 0.5s ease;
+}
+
+h1, h2, h3 {
+  color: #d4af37;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Navigation styles */
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  position: relative;
+}
+
+nav a {
+  color: #d4af37;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Hero section */
+.hero {
+  height: 60vh;
+  background: url('hero-image.jpg') center center/cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Services section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* Pricing tiers */
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.pricing-tier {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Booking form */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form input, .booking-form textarea {
+  padding: 10px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 10px 0;
+}
